@@ -1,0 +1,125 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-background: #242424;
+  --color-link: #646cff;
+  --color-link-hover: #535bf2;
+  --color-button-bg: #1a1a1a;
+  --color-button-border-hover: #646cff;
+
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+#app {
+  max-width: 960px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 2rem;
+  transition: filter 0.3s ease;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 10px #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 10px #f7df1eaa);
+}
+
+.card {
+  background-color: #333;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  color: #fff;
+  text-align: left;
+}
+.card h2 {
+  margin-top: 0;
+}
+.card p {
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-button-bg);
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+button:hover {
+  border-color: var(--color-button-border-hover);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.read-the-docs {
+  color: #888;
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: #213547;
+    --color-background: #ffffff;
+    --color-link-hover: #747bff;
+    --color-button-bg: #f9f9f9;
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+  .card {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  button {
+    background-color: var(--color-button-bg);
+    color: #000;
+  }
+}
