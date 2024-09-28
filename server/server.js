@@ -50,7 +50,7 @@ let items = [
 
 
 app.get('/', (req, res) => {
-  res.send('<h1>Business Guide API/h1>');
+  res.send('<h1>Business Guide API</h1>');
 });
 
 app.get('/api/items', (req, res) => {
